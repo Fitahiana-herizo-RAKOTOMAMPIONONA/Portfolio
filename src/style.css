@@ -1,0 +1,156 @@
+
+@font-face {
+    font-family: 'winter';
+    src: url('../public/assets/font/winter/winter.otf');
+}
+:root{
+    --first : rgb(65, 65, 65);
+    --second :  rgb(255, 255,255);
+    --third :  rgb(0, 195, 255);
+    --four :  rgba(243, 4, 4, 0.733);
+    --text :  rgb(255, 255, 255);
+    --backgound: rgb(37, 37, 37);
+    --titreColor: rgb(251, 255, 0);
+    --shadow: rgb(0 0 0/0%);
+    --maty: #ffffff81;
+
+    --h1-Titre: 60px;
+    --h2-Titre: 40px;
+    --h3Titre: 30px;
+
+    --normalFont : 20px;
+
+    --semi : 2rem;
+    --mediumFontWeight: 3rem;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input ,
+textarea{
+    /* font-family: cursive; */
+    font-size: 1rem;
+}
+
+body{
+    background-color: var(--backgound);
+    line-height: 1.7;
+    color: var(--text);
+}
+h1,h2,h3{
+    color: var(--titreColor);
+    font-weight: var(--semi);
+    line-height: 1.2;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border : 0;
+    outline: none;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle ;
+}
+.container{
+    max-width: 1400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+}
+.section{
+    padding-top: 7rem; 
+    padding-bottom: 2rem;
+    min-height: 100vh;
+}
+
+.sectionTitre{
+    font-size: var(--h1-Titre) ;
+    margin-left: 0.875rem;
+    font-weight: var(--semi);
+    position: relative;
+    margin-bottom: 3.75rem;
+}
+.sectionTitre::before{
+    content: '';
+    height: 2.25rem;
+    width: 2.25rem;
+    position: absolute;
+    left: -0.875rem;
+    top: -0.875rem;
+}
+.btn{
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: 1.875rem;
+    box-shadow: 0 0 1px var(--shadox);
+    border: 1px solid transparent;
+    color: #fff; 
+    display: inline-block;
+    background-color: var(--first);
+    /* font-weight: var(--font-bold); */
+}
+
+@keyframes button-push {
+    50%{
+        transform: scale(.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.btn:hover{
+    animation: button-push .3s linear .2s;
+}
+.icone{
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 600px) {
+    .section{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        min-height: 100vh;
+    }   
+    .container{
+        max-width: 1400px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+    }
+    .sectionTitre{
+        font-size: 25px ;
+        margin-left: 0.875rem;
+        font-weight: var(--semi);
+        position: relative;
+        margin-bottom: 1rem;
+    }
+    body,
+    button,
+    input ,
+    textarea{
+        font-size: .8rem;
+    }
+}
