@@ -1,13 +1,15 @@
 import { Component } from "react";
 import {FaBriefcase} from "react-icons/fa"
+import './experience.css'
 import {FaGraduationCap} from "react-icons/fa"
 
-function QualificationData({titre,sousTitre,calendrier}){
-    return <div className="qualificationData">
+function QualificationData({id,titre,sousTitre,calendrier}){
+    if ((id% 2)===0){
+        return <div className="qualificationData">
                 <div>
                     <h3 className="SectionTitre">{titre}</h3>
                     <span className="qualificationSousTitre">
-                        {sousTitre}
+                        {sousTitre} 
                     </span>
                     <div className="qualificationCalendar">
                         <FaBriefcase/> {"   " + calendrier}
@@ -18,27 +20,47 @@ function QualificationData({titre,sousTitre,calendrier}){
                     <span className="qualificationRounder">
 
                     </span>
-                    <div className="qualificationLine">
+                    <span className="qualificationLine">
+                        
+                    </span>
+                </div>
+            </div>
+    }
+    return <div className="qualificationData">
+                <div>
+                    <span className="qualificationRounder">
 
+                    </span>
+                    <span className="qualificationLine">
+                        
+                    </span>
+                </div>
+                <div>
+                    <h3 className="SectionTitre">{titre}</h3>
+                    <span className="qualificationSousTitre">
+                        {sousTitre} 
+                    </span>
+                    <div className="qualificationCalendar">
+                        <FaBriefcase/> {"   " + calendrier}
                     </div>
                 </div>
             </div>
 }
 const DataExperience =[
     {
-        titre: "vio",
-        sousTitre:"",
-        calendrier : ""
+        titre: "Informatique",
+        sousTitre:"Informatique , Multimedia ,Technologie de  l'information et de communication, Intelligence Artificielle(ISPM)",
+        calendrier : "2020-2022"
     },
     {
-        titre: "visdso",
-        sousTitre:"",
-        calendrier : ""
+        titre: "BaccLaureat C",
+        sousTitre:"Au sein de Institution Sainte Famille Mahamasina (ISF)",
+        calendrier : "2021"
     },
     {
-        titre: "vio",
-        sousTitre:"",
-        calendrier : ""
+        titre: "BEPC",
+        sousTitre:"Au sein de l'ecole sacré coeur Anosizato (ESCA)",
+        calendrier : "2018"
     },
 ]
 
@@ -51,14 +73,14 @@ class Experience extends Component{
 
             <div className="qualificaionContainer Container">
                 <div className="qualificationHeader">
-                    <div className="sualificationButton">
-                        <FaGraduationCap/>
+                    <div className="qualificationButton qualificationActive">
+                        <FaGraduationCap className="qualificationIcone"/>
                         <span>
-                            education 
+                            Formation 
                         </span>
                     </div>
-                    <div className="sualificationButton">
-                        <FaBriefcase/>
+                    <div className="qualificationButton">
+                        <FaBriefcase className="qualificationIcone"/>
                         <span>
                             Experience 
                         </span>
@@ -66,11 +88,26 @@ class Experience extends Component{
                 </div>
 
                 <div className="qualificationSection">
-                    <div className="qualificationContent">
+                    <div className="qualificationContent active">
                         {
                             DataExperience.map((item,index)=>(
                                 <QualificationData 
                                     key={index}
+                                    id={index} 
+                                    titre={item.titre} 
+                                    sousTitre={item.sousTitre} 
+                                    calendrier={item.calendrier}
+                                />
+
+                            ))
+                        }
+
+                    </div><div className="qualificationContent">
+                        {
+                            DataExperience.map((item,index)=>(
+                                <QualificationData 
+                                    key={index}
+                                    id={index}
                                     titre={item.titre} 
                                     sousTitre={item.sousTitre} 
                                     calendrier={item.calendrier}
