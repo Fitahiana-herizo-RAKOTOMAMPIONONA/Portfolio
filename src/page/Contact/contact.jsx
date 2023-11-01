@@ -32,7 +32,7 @@ function ContactCard({chemin ,nomAdresse, adresse}){
                 <a href={chemin} className="contactBoutton">
                     <div className="contactBouttonCard">
                         <div>
-                            ecrit - moi
+                            write-me
                         </div>
                         <AiFillAndroid className="contactCardIcon"/>
                     </div>
@@ -45,7 +45,7 @@ class Contact extends Component{
     render(){
         return <div className="contact section container" id="contact">
             <h1 className="sectionTitre">
-                Contactez-moi
+                Contact me
             </h1>
             <div className="contactContainer grid">
                 <div className="contactContent">
