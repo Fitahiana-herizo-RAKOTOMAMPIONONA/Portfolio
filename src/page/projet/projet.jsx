@@ -41,7 +41,7 @@ export default function Projet(){
         }
    
         
-        return <div className="projet container section">
+        return <div className="projet container">
            
             <div className="projetCard">
                 <div className="projectContainer">
