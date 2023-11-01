@@ -15,6 +15,10 @@
     font-family: 'Friday';
     src: url('../public/assets/font/friday_4/Friday.otf');
 }
+@font-face {
+    font-family: 'aubange';
+    src: url('../public/assets/font/aubange_belgium/Aubange\ Belgium\ Regular.otf');
+}
 :root{
     --first : rgb(65, 65, 65);
     --second :  rgb(255, 255,255);
