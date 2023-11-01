@@ -61,3 +61,21 @@
         grid-template-columns: repeat(1,1fr);
     }
 }
+@media (max-width : 400px) {
+    .backEnd{
+        margin-top: 10px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .competenceGroup{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .nomCompetence{
+        margin-bottom: 0px;
+    }
+    .dataCompetence{
+        padding:.25rem;
+        margin-top: 2px;
+    }
+}

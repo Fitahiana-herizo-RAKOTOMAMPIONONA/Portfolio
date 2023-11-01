@@ -3,6 +3,7 @@ import "./work.css"
 import { MenuWork } from "../../data/dataWork";
 import {MdWork} from "react-icons/md"
 import { navWork } from "../../data/dataWork";
+import Projet from "../projet/projet";
 
 export default  function Work(){
         const [items,setItems]= useState(MenuWork)
@@ -19,7 +20,11 @@ export default  function Work(){
 
         return <div className="work section container" id="work">
             <h1 className="sectionTitre">
-                Travail Recents
+                Work
+            </h1>
+            <Projet/>
+            <h1 className="sectionTitre">
+                Art
             </h1>
             <div className="filtreWork">
                 {
@@ -42,7 +47,7 @@ export default  function Work(){
                         <div className="workCard" key={id}>
                             <div className="containerWorkImage">
                                 <img src={image} alt="" srcset="" className="workImage"/>
-                                <div className="workMask">
+                                <div className="workMask" >
 
                                 </div>
                             </div>

@@ -28,7 +28,7 @@ class About extends Component{
     render(){
         return <div className="about section container" id="about">
             <h2 className="sectionTitre">
-                Qui suis -je?
+                About me
             </h2>
             <div className="cardAbout grid">
                 <img src="./assets/image/herizo.jpg" alt="" srcset="" className="photoAbout"/>

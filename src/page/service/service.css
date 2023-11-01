@@ -143,4 +143,10 @@
         width: 90%;
         min-height: 60%;
     }
+    .titreService{
+        font-size: 15px;
+    }
+    .boutonService span{
+        font-size: 13px;
+    }
 }

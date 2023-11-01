@@ -6,17 +6,7 @@
     min-height:  100vh;
     position: relative;
 }
-/* @keyframes rot {
-    0%{
-        transform: rota(0deg)
-    }
-    50%{
-        transform: translate(180deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-} */
+
 @keyframes rot {
     0%{
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -33,6 +23,7 @@
     height: 400px;
     object-fit: cover;
     border-radius: 50%;
+    animation: rotation 10s  linear 2s alternate ;
     animation: rot 5s  linear 2s alternate-reverse infinite ;
     border: 10px solid #ffffff;
 }

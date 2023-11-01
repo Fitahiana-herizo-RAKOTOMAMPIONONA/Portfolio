@@ -10,6 +10,7 @@ import Contact from "./page/Contact/contact";
 import Experience from "./page/experience/experience";
 import "./style.css"
 import "./app.css"
+import Projet from "./page/projet/projet";
 function App() {
   return (
     <div className="App">

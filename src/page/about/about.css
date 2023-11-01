@@ -18,7 +18,7 @@
     align-items: flex-start;
     position: relative;
 }
-.aboutStatistique::before{
+/* .aboutStatistique::before{
     content: '';
     width: 0;
     height: 0;
@@ -27,7 +27,7 @@
     position: absolute;
     left: -.95rem;
     top: 20%;
-}
+} */
 .aboutDecription{
     margin-bottom: 1rem;
     text-align: justify;
@@ -64,7 +64,7 @@
 .designer{
     background-color: var(--four);
 }
-.photographie{
+.photography{
     background-color: var(--second);
 }
 
@@ -86,16 +86,12 @@
     column-gap: 1.75rem;
 }.aboutStatistique{
     display: block;
-    .grid{
-        display: block;
-    }
 }
 .aboutBox{
     margin-top: 100px;
     background-color: var(--first);
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 2px 1px 2px rgb(151, 141, 141);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -119,12 +115,105 @@
     text-align: center;
 }
 @media (max-width: 1500px) {
+    /* .aboutStatistique{
+        padding: 20px;
+        background-color: var(--first);
+        box-shadow: var(--shadow);
+        border-radius: 30px;
+        grid-template-columns: repeat(2,1fr );
+        column-gap: 1.75rem;
+        align-items: flex-start;
+        position: relative;
+    } */
     .aboutStatistique{
-        display: inline;
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px;
+        position: relative;
+    }   
+    .cardAbout{
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+    }
+    .photoAbout{
+        width: 300px;
+        height: 300px;
     }
 }
+@media (max-width: 1000px) {
+    .cardAbout{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .photoAbout{
+        margin-top: -40px;
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+    .aboutCompetence{
+        /* width: 80%; */
+        /* margin-left: 10%; */
+    }
+    /* .about .sectionTitre{
+        margin-bottom: 5px;
+    } */
+}
 @media (max-width: 600px) {
+    .photoAbout{
+        margin-top: -40px;
+        width: 70%;
+        height: auto;
+        margin-left: 15%;
+    }
+    .aboutStatistique{
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .about .sectionTitre{
+        margin-bottom: 5px;
+    }
+
+    .aboutCompetenceBar,
+    .pourcentage{
+        height: 5px;
+        border-radius: 0.15rem;
+    }
+    .aboutNomCompetence{
+        font-size: 15px;
+        font-weight: var(--mediumFontWeight);
+    }
+    .IconeCompetence{
+        font-size: 15px;
+        color: var(--maty);
+    }
+    .aboutTitre{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .aboutBox{
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+    .aboutBox:hover{
+        transform: scale(1.02);
+    }
+    .aboutCompetenceStatistique{
+        line-height: 0rem
+    }
+    .aboutNomCompetence{
+        line-height: 0;
+    }
+}
+@media (max-width: 900px) {
     .aboutFooter{
-        display: block;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: -15rem;
+    }
+}
+@media (max-width: 500px) {
+    .aboutFooter{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: -15rem;
     }
 }

@@ -1,6 +1,5 @@
 export const navWork=[
     "tout",
-    "web",
     "illustration",
     "photo",
     "design"
@@ -8,12 +7,6 @@ export const navWork=[
 
 
 export const MenuWork =[
-    {
-        id: 1,
-        image: "./assets/image/saryTsart.jpg",
-        title :  "Sart ts'art",
-        category : "web"
-    },
     {
         id: 2,
         image: "./assets/image/coca.jpg",
@@ -37,12 +30,6 @@ export const MenuWork =[
         image: "./assets/image/ispm.jpg",
         title :  "Ispm",
         category : "photo"
-    },
-    {
-        id: 6,
-        image: "./assets/image/web2.jpg",
-        title :  "La Mozika",
-        category : "web"
     },
     {
         id: 7,

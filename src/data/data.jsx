@@ -39,12 +39,12 @@ export const navBar =[
 export  const PourcentageCompetence = [
     {
         nom: "developpement",
-        pourcentage : "0%"
+        pourcentage : "90%"
     },{
         nom: "designer",
         pourcentage : "80%"
     },{
-        nom: "photographie",
+        nom: "photography",
         pourcentage : "60%"
     }
 ]
@@ -80,12 +80,12 @@ export const frontEndDevelpper = [
     {
         icone: <FaAccusoft className="IconeSkills"/>,
         nom : "Css",
-        niveau: "avancee",
+        niveau: "advanced",
     },
     {
         icone: <FaAccusoft className="IconeSkills"/>,
         nom : "javascript",
-        niveau: "avanvee",
+        niveau: "advanced",
     },
     {
         icone: <FaAccusoft className="IconeSkills"/>,

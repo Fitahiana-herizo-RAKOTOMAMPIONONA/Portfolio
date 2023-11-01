@@ -33,7 +33,7 @@ class Home extends Component{
                    {this.tenaMaka()}
                 </h1>
                 <p className="paragrapheProfil">
-                    je suis un developpeur web
+                    I'm an developper
                 </p>
                 <div className="reseau">
                     <a href="http://" target="_blank" rel="noopener noreferrer">

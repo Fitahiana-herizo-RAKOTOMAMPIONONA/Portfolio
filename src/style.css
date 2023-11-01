@@ -3,6 +3,18 @@
     font-family: 'winter';
     src: url('../public/assets/font/winter/winter.otf');
 }
+@font-face {
+    font-family: 'WritingSignature';
+    src: url('../public/assets/font/writing_signature_2/WritingSignature.otf');
+}
+@font-face {
+    font-family: 'California';
+    src: url('../public/assets/font/the_california_2/The\ California.ttf');
+}
+@font-face {
+    font-family: 'Friday';
+    src: url('../public/assets/font/friday_4/Friday.otf');
+}
 :root{
     --first : rgb(65, 65, 65);
     --second :  rgb(255, 255,255);
@@ -93,6 +105,7 @@ img{
     margin-left: 0.875rem;
     font-weight: var(--semi);
     position: relative;
+    font-family: "Writingsignature";
     margin-bottom: 3.75rem;
 }
 .sectionTitre::before{
