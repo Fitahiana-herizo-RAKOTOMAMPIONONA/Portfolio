@@ -10,7 +10,7 @@ export default  function Work(){
         const [active,setActive]= useState(0)
         const FilterItem = (categoryItem)=>{
             const updateItems = MenuWork.filter((element)=>{
-                if (categoryItem==="tout")
+                if (categoryItem===navWork[0])
                     return true;
                 return element.category === categoryItem
             })
@@ -43,6 +43,13 @@ export default  function Work(){
             <div className="workContainer grid">
                 {items.map((item,index)=>{
                     const {id , image, title, category} =item
+                    if (items.length===0){
+                        return (
+                            <div className="containerWorkImage">
+                                <img src="./assets/image/herizo.jpg" alt="" srcset="" className="workImage"/>
+                            </div>
+                        )
+                    }
                     return  (
                         <div className="workCard" key={id}>
                             <div className="containerWorkImage">

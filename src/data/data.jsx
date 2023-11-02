@@ -7,30 +7,38 @@ export const navBar =[
     {
         cheminLien: "home",
         icone: <MdMenu/>,
+        nom: "Home",
     },
     {
         cheminLien: "about",
         icone: <FaUser/>,
+        nom: "About",
     },
     {
         cheminLien: "skills",
         icone: <FaBriefcase/>,
+        nom: "Skills",
     },
     {
         cheminLien: "service",
         icone: <FaEnvelope/>,
+        nom: "Service",
     },
     {
         cheminLien: "experience",
         icone: <FaGraduationCap/>,
+        nom: "Experience",
     },
     {
         cheminLien: "work",
         icone: <MdWork/>,
+        nom: "Work",
+
     },
     {
         cheminLien: "contact",
         icone:<MdContactPhone/>,
+        nom: "Contact",
     },
     
 ]
@@ -38,7 +46,7 @@ export const navBar =[
 
 export  const PourcentageCompetence = [
     {
-        nom: "developpement",
+        nom: "developement",
         pourcentage : "90%"
     },{
         nom: "designer",
@@ -55,7 +63,7 @@ export  const CompetenceFini = [
     {
         icone: <FaAddressBook className="IconeCompetence"/>,
         nombre : "10",
-        paragraphe: "Developpement Web Finis"
+        paragraphe: "Web completely"
     },{
         icone: <FaAddressBook className="IconeCompetence"/>,
         nombre : "40",
@@ -72,15 +80,15 @@ export  const CompetenceFini = [
 ]
 
 export const frontEndDevelpper = [
+    // {
+    //     icone: <FaAccusoft className="IconeSkills"/>,
+    //     nom : "Html",
+    //     niveau: "Basic",
+    // },
     {
         icone: <FaAccusoft className="IconeSkills"/>,
-        nom : "Html",
-        niveau: "Basic",
-    },
-    {
-        icone: <FaAccusoft className="IconeSkills"/>,
-        nom : "Css",
-        niveau: "advanced",
+        nom : "React",
+        niveau: "Intermediare",
     },
     {
         icone: <FaAccusoft className="IconeSkills"/>,
@@ -89,35 +97,30 @@ export const frontEndDevelpper = [
     },
     {
         icone: <FaAccusoft className="IconeSkills"/>,
-        nom : "React",
-        niveau: "Intermediare",
-    },
-    {
-        icone: <FaAccusoft className="IconeSkills"/>,
         nom : "vueJs",
         niveau: "niveau 2",
     },
     {
         icone: <FaAccusoft className="IconeSkills"/>,
-        nom : "Html&Css",
-        niveau: "niveau 2",
-    }
+        nom : "Css",
+        niveau: "advanced",
+    },
 ]
 export const backEndDevelpper = [
     {
         icone: <FaAccusoft className="IconeSkills"/>,
-        nom : "jAVA",
+        nom : "Java",
         niveau: "Basic",
     },
     {
         icone: <FaAccusoft className="IconeSkills"/>,
-        nom : "pHP",
-        niveau: "avancee",
+        nom : "PHP",
+        niveau: "advanced",
     },
     {
         icone: <FaAccusoft className="IconeSkills"/>,
         nom : "NodeJS",
-        niveau: "avanvee",
+        niveau: "advanced",
     },
     {
         icone: <FaAccusoft className="IconeSkills"/>,

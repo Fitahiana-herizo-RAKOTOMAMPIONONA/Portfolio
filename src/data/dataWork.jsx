@@ -1,5 +1,5 @@
 export const navWork=[
-    "tout",
+    "All",
     "illustration",
     "photo",
     "design"

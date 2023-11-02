@@ -10,7 +10,7 @@ import Contact from "./page/Contact/contact";
 import Experience from "./page/experience/experience";
 import "./style.css"
 import "./app.css"
-import Projet from "./page/projet/projet";
+import Menu from "./component/menuResponsive/menu";
 function App() {
   return (
     <div className="App">
@@ -27,6 +27,7 @@ function App() {
         <div className="style">
           -------   Herizo
         </div>
+        <Menu/>
     </div>
   );
 }

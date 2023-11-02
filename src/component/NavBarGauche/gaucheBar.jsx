@@ -41,6 +41,4 @@ class Gauche extends Component{
         </div>
     }
 }
-
 export default Gauche
-
