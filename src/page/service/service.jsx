@@ -6,7 +6,7 @@ import {MdSkipNext,MdClose} from "react-icons/md"
 
     
 function ServiceListItem({icone,paragraphe}){
-    return <li className="serviceListItem">
+    return <li className="serviceListItem" >
             <MdSkipNext className="iconeServiceList"/>
 
             <div className="serrviceActiveInfo">
@@ -15,13 +15,17 @@ function ServiceListItem({icone,paragraphe}){
         </li>
 }
 
-function ContenuService({titreService,icone}){
+function ContenuService({titreService,icone,backGround}){
     const [toggleState,setToggleState] = useState(0)
     const toggleTab =(index) =>{
         setToggleState(index)
     }
-
-    return <div className="contenuService">
+    const cssBackground = {
+        backgroundImage: `url('${backGround}')`,
+        backgroundSize: "cover",
+        backGroundOrigin :"center"
+    }
+    return <div className="contenuService" style={cssBackground}>
                 <div>
                     {icone}
                     <h3 className="titreService">
@@ -37,7 +41,7 @@ function ContenuService({titreService,icone}){
                             <MdClose className="iconeClose" onClick={()=>toggleTab(0)}/>
                             <h3 className="serviceTitre">{titreService}</h3>
                             <p className="serviceDescription">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit quos nobis nostrum nemo molestias iure perspiciatis, dolor tempore? Saepe tempore aspernatur exercitationem eius labore illo dolor maiores delectus architecto.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta i
                             </p>
                             <ul className="serviceList">
                                 {}
@@ -56,9 +60,9 @@ class Service extends Component{
                 service
             </h2>
             <div className="serviceContainer  grid">
-                <ContenuService titreService="web" icone={<AiFillAccountBook className="iconeService"/>}/>
-                <ContenuService titreService="design UI/UX" icone={<MdSkipNext className="iconeService"/>}/>
-                <ContenuService titreService="Photographie" icone={<AiFillAccountBook className="iconeService"/>}/>
+                <ContenuService titreService="web" icone={<AiFillAccountBook className="iconeService"/>} backGround="./assets/image/dev.jpg"/>
+                <ContenuService titreService="design UI/UX" icone={<MdSkipNext className="iconeService"/>} backGround="./assets/image/design.jpg"/>
+                <ContenuService titreService="Photographie" icone={<AiFillAccountBook className="iconeService" />} backGround="./assets/image/dev1.jpg"/>
             </div>
         </div>
     }

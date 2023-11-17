@@ -4,6 +4,7 @@
     justify-content: center;
     column-gap: 4rem;
     margin: 0;
+    margin-top: 200px;
 }
 .contenuService{
     position: relative;
@@ -119,6 +120,7 @@
     .serviceContainer{
         column-gap: 2rem;
         grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
     }
     .contenuService{
         margin-top: 3rem;

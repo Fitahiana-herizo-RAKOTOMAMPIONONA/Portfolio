@@ -25,6 +25,7 @@ export default function Menu(){
                                 className="listNav" 
                                 key={index}
                                 onClick={changerClasse}
+    
                             >
                                 <a href={`#${item.cheminLien}`} className="listNavLink iconeNavBar">
                                     {item.icone}

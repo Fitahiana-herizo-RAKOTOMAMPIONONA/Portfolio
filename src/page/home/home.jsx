@@ -3,7 +3,7 @@ import Scroll from "../../component/scroll/scrollDown";
 import "./home.css"
 import 'material-icons/iconfont/material-icons.css'
 import { FaFacebook,FaInstagram ,FaTwitter, FaMailBulk,FaLinkedinIn} from "react-icons/fa";
-
+// import { IconButton } from "@mui/material";
 class Home extends Component{
     maka(){
         return window.innerWidth
@@ -29,24 +29,20 @@ class Home extends Component{
                 <h1 className="monNom">
                     Herizo Fitahiana  Rakotomampionona
                 </h1>
-                <h1 className="monNom">
-                   {this.tenaMaka()}
-                </h1>
                 <p className="paragrapheProfil">
                     I'm an developper
                 </p>
                 <div className="reseau">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook className="iconeReseau"/>
+                    <a href="https://www.facebook.com/profile.php?id=100079988185465" target="_blank" rel="noopener noreferrer">
+                            <FaFacebook className="iconeReseau"/>
                     </a>
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className="iconeReseau"/>
- 
+                            <FaInstagram className="iconeReseau"/>
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <FaTwitter className="iconeReseau"/>
+                    <a href="https://github.com/Fitahiana-herizo-RAKOTOMAMPIONONA" target="_blank" rel="noopener noreferrer">
+                            <FaTwitter className="iconeReseau"/>
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:fitahianaherizo10@gmail.com.com" target="_blank" rel="noopener noreferrer">
                         <FaMailBulk className="iconeReseau"/>
                     </a>
                     <a href="http://" target="_blank" rel="noopener noreferrer">

@@ -67,6 +67,18 @@
     color:var(--second);
     font-weight: bold;
 }
+.langage{
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: 10px;
+}
+.chaqueLangage{
+    padding: 5px 12px;
+    border-radius: 2px;
+    background-color: var(--third);
+
+}
+
 
 @media (max-width : 1150px) {
     .projetCard{

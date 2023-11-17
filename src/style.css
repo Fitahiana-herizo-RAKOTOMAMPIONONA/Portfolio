@@ -19,7 +19,7 @@
     font-family: 'aubange';
     src: url('../public/assets/font/aubange_belgium/Aubange\ Belgium\ Regular.otf');
 }
-:root{
+/* :root{
     --first : rgb(65, 65, 65);
     --second :  rgb(255, 255,255);
     --third :  rgb(0, 195, 255);
@@ -40,8 +40,29 @@
 
     --semi : 2rem;
     --mediumFontWeight: 3rem;
-}
+} */
+:root{
+    --first : rgb(22, 34, 92);
+    --second :  rgb(255, 255,255);
+    --third :  rgb(255, 38, 0);
+    --four :  rgba(48, 17, 17, 0.733);
+    --text :  rgb(255, 255, 255);
+    --backgound: rgb(3, 9, 36);
+    --titreColor: rgb(251, 255, 0);
+    --shadow: rgb(0 0 0/0%);
+    --maty: #ffffff81;
 
+    --black : #00000;
+
+    --h1-Titre: 60px;
+    --h2-Titre: 40px;
+    --h3Titre: 30px;
+
+    --normalFont : 20px;
+
+    --semi : 2rem;
+    --mediumFontWeight: 3rem;
+}
 
 
 *{

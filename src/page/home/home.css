@@ -1,4 +1,3 @@
-@import url('./../../style.css');
 .home{
     padding: 100px;
     display: flex;
@@ -45,7 +44,7 @@
 }
 
 .monNom{
-    font-family: 'winter';
+    font-family: 'Winter';
     align-items: center;
 
 }

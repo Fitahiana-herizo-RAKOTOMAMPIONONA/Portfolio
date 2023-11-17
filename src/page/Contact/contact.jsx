@@ -1,7 +1,7 @@
 import { Component } from "react";
 import './contact.css'
 import {AiFillAccountBook,AiFillAndroid} from 'react-icons/ai'
-
+// import { IconButton } from "@mui/material";
 const contactCard = [
     {
         chemin: "mailto:fitahianaherizo10@gmail.com.com",
@@ -22,7 +22,9 @@ const contactCard = [
 
 function ContactCard({chemin ,nomAdresse, adresse}){
     return <div className="contactCard">
-                <AiFillAccountBook className="contactCardIcon"/>
+     
+                    <AiFillAccountBook className="contactCardIcon"/>
+
                 <h3 className="contactCardTitle">
                     {nomAdresse}
                 </h3>
@@ -62,7 +64,7 @@ class Contact extends Component{
                 </div>
                 <div className="contactContent">
                     <h3 className="contactTitre">
-                        Ecris-moi votre projet
+                        Write your project
                     </h3>
                     <form action="" className="contactForm">
                         <div className="contactFormCard">

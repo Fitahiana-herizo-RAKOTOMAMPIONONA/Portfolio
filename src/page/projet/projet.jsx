@@ -14,18 +14,27 @@ const DataProjet = [
         photo: "./assets/image/profil.jpg",
         nomProjet: "Sary ts' art",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nulla eveniet voluptas natus tenetur qui vel consequuntur dolorem libero magni animi, non, dolore accusamus laborum explicabo  quos, ab doloribus rerum.",
+        langage: [
+            "React", "css"
+        ]
     },
     {
         id: 2,
         photo: "./assets/image/maria.jpg",
         nomProjet: "La mozika",
         description: "La mozika est un plateforme pour ecoter de la musique",
+        langage: [
+            "Html", "css" ,"javaScrit", "NodeJs","Mysql"
+        ]
     },
     {
         id: 3,
         photo: "./assets/image/rano.jpg",
         nomProjet: "Portfolio",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nulla eveniet voluptas natus tenetur qui vel consequuntur dolorem libero magni animi, non, dolore accusamus laborum explicabo  quos, ab doloribus rerum.",
+        langage: [
+            "Html", "css" ,"javaScrit", "NodeJs","Mysql"
+        ]
     }
 ]
 
@@ -73,7 +82,7 @@ export default function Projet(){
 
                         </div>
                         {items.map((item,index)=>{
-                            const { nomProjet, description} =item
+                            const { nomProjet, description, langage} =item
                             
                             if (items.length>=2){
                                     FilterItem(1)
@@ -86,6 +95,16 @@ export default function Projet(){
                                         <div className="paragrapheProjet">
                                             {description}
                                         </div> 
+                                        <div className="langage">
+                                            {
+                                                langage.map((item,index)=>(
+        
+                                                    <div className="chaqueLangage " key={index} >
+                                                        {item}
+                                                    </div>
+                                                ))
+                                            }
+                                        </div>
                             </div>
                         })}
                         <button id="btn" className="btn">Discover</button>
