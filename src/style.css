@@ -19,14 +19,14 @@
     font-family: 'aubange';
     src: url('../public/assets/font/aubange_belgium/Aubange\ Belgium\ Regular.otf');
 }
-/* :root{
-    --first : rgb(65, 65, 65);
+:root{
+    --first : rgb(22, 34, 92);
     --second :  rgb(255, 255,255);
-    --third :  rgb(0, 195, 255);
-    --four :  rgba(243, 4, 4, 0.733);
+    --third :  rgb(255, 28, 28);
+    --four :  rgba(47, 15, 15, 0.871);
     --text :  rgb(255, 255, 255);
-    --backgound: rgb(37, 37, 37);
-    --titreColor: rgb(251, 255, 0);
+    --backgound: rgb(3, 9, 36);
+    --titreColor: rgb(151, 153, 47);
     --shadow: rgb(0 0 0/0%);
     --maty: #ffffff81;
 
@@ -40,8 +40,9 @@
 
     --semi : 2rem;
     --mediumFontWeight: 3rem;
-} */
-:root{
+}
+
+/* :root{
     --first : rgb(22, 34, 92);
     --second :  rgb(255, 255,255);
     --third :  rgb(255, 38, 0);
@@ -62,7 +63,7 @@
 
     --semi : 2rem;
     --mediumFontWeight: 3rem;
-}
+} */
 
 
 *{
@@ -132,6 +133,7 @@ img{
     position: relative;
     font-family: "Writingsignature";
     margin-bottom: 3.75rem;
+    text-transform: capitalize;
 }
 .sectionTitre::before{
     content: '';

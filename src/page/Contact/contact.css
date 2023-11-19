@@ -90,6 +90,7 @@
 }
 .contactFormArea{
     height: 200px;
+    resize: none;
 }
 .contactFormArea::textarea{
     resize: none;
@@ -125,6 +126,9 @@
     }
     .contactFormCard{
         margin-left: 5%;
+    }
+    .writeMe{
+        font-size: 15px;
     }
 }
 

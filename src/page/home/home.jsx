@@ -26,9 +26,9 @@ class Home extends Component{
          
             <div className="SectioAcuueil">
                 <img src="./assets/image/herizo.jpg" alt="" srcset="" className="MonImage"/>
-                <h1 className="monNom">
-                    Herizo Fitahiana  Rakotomampionona
-                </h1>
+                <div className="monNom">
+                    Herizo Fitahiana <span className="capitale"> Rakotomampionona</span>
+                </div>
                 <p className="paragrapheProfil">
                     I'm an developper
                 </p>

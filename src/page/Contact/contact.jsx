@@ -1,7 +1,7 @@
 import { Component } from "react";
 import './contact.css'
-import {AiFillAccountBook,AiFillAndroid} from 'react-icons/ai'
-// import { IconButton } from "@mui/material";
+import {AiFillAccountBook} from 'react-icons/ai'
+import {MdSkipNext} from 'react-icons/md'
 const contactCard = [
     {
         chemin: "mailto:fitahianaherizo10@gmail.com.com",
@@ -33,10 +33,10 @@ function ContactCard({chemin ,nomAdresse, adresse}){
                 </div>
                 <a href={chemin} className="contactBoutton">
                     <div className="contactBouttonCard">
-                        <div>
+                        <div className="writeMe">
                             write-me
                         </div>
-                        <AiFillAndroid className="contactCardIcon"/>
+                        <MdSkipNext className="contactCardIcon"/>
                     </div>
                      
                 </a>
