@@ -1,6 +1,9 @@
 import { Component } from "react";
 import './contact.css'
 import {AiFillAccountBook} from 'react-icons/ai'
+import { Button } from "react-scroll";
+import { FaEnvelope } from "react-icons/fa";
+// import Button from "@mui/material/Button"
 import {MdSkipNext} from 'react-icons/md'
 const contactCard = [
     {
@@ -100,6 +103,13 @@ class Contact extends Component{
                                 placeholder="Votre Projet"
                             />
                         </div>
+                        <div className="buttonContact">
+                            <button className="btn" id="buttonContactbutton">
+                                <FaEnvelope/>
+                                <div>envoyer</div>
+                            </button>
+                        </div>
+                            
                     </form>
                 </div>
             </div>

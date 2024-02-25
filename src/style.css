@@ -26,7 +26,7 @@
     --four :  rgba(47, 15, 15, 0.871);
     --text :  rgb(255, 255, 255);
     --backgound: rgb(3, 9, 36);
-    --titreColor: rgb(151, 153, 47);
+    --titreColor: rgb(218, 221, 34);
     --shadow: rgb(0 0 0/0%);
     --maty: #ffffff81;
 
@@ -125,7 +125,11 @@ img{
     padding-bottom: 2rem;
     min-height: 100vh;
 }
-
+@media (max-width: 600px) {
+    .section{
+        min-height: 50vh;
+    }
+}
 .sectionTitre{
     font-size: var(--h1-Titre) ;
     margin-left: 0.875rem;

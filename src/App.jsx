@@ -11,6 +11,7 @@ import Experience from "./page/experience/experience";
 import "./style.css"
 import "./app.css"
 import Menu from "./component/menuResponsive/menu";
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
             <Experience/>
             <Work/>
             <Contact/>
+  
         </main>
         <div className="style">
           -------   Herizo

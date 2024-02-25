@@ -1,6 +1,6 @@
 import { FaAddressBook } from "react-icons/fa"
 import{FaAccusoft} from "react-icons/fa"
-import { MdContactPhone, MdMenu,MdWork} from "react-icons/md"
+import { MdContactPhone, MdMenu,MdReviews,MdWork} from "react-icons/md"
 import {FaGraduationCap,FaBriefcase,FaUser,FaEnvelope} from "react-icons/fa"
 
 export const navBar =[
@@ -39,6 +39,11 @@ export const navBar =[
         cheminLien: "contact",
         icone:<MdContactPhone/>,
         nom: "Contact",
+    },
+    {
+        cheminLien: "review",
+        icone:<MdReviews/>,
+        nom: "Review",
     },
     
 ]

@@ -74,9 +74,8 @@
 }
 .chaqueLangage{
     padding: 5px 12px;
-    border-radius: 2px;
-    background-color: var(--third);
-
+    border-radius: 5px;
+    background-color: rgb(105, 92, 92);
 }
 
 
