@@ -11,6 +11,7 @@ import Experience from "./page/experience/experience";
 import "./style.css"
 import "./app.css"
 import Menu from "./component/menuResponsive/menu";
+import Footer from "./component/footer/footer";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
             <Experience/>
             <Work/>
             <Contact/>
-  
+            <Footer/>
         </main>
         <div className="style">
           -------   Herizo

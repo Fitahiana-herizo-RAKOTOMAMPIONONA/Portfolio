@@ -19,6 +19,14 @@
     font-family: 'aubange';
     src: url('../public/assets/font/aubange_belgium/Aubange\ Belgium\ Regular.otf');
 }
+@font-face {
+    font-family: 'unigeo';
+    src: url('../public/assets/font/unigeo/Unigeo64-Semibold-trial.ttf');
+}
+@font-face {
+    font-family: 'nexa';
+    src: url('../public/assets/font/nexa/NexaRustSlab-Trial-Shadow.woff2');
+}
 :root{
     --first : rgb(22, 34, 92);
     --second :  rgb(255, 255,255);
@@ -70,7 +78,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    /* font-family: "unigeo"; */
 }
 
 html{
